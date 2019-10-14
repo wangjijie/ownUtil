@@ -1,4 +1,4 @@
-package com.wyt.common.utils;
+package com.wjj.common.utils;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.junit.Test;
+
+import com.wjj.common.utils.DateUtil;
+import com.wjj.common.utils.RandomUtil;
+import com.wjj.common.utils.StringUtil;
 
 public class StringUtilTest {
 

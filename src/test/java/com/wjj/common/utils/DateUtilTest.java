@@ -1,4 +1,4 @@
-package com.wyt.common.utils;
+package com.wjj.common.utils;
 
 
 
@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.junit.Test;
+
 //开始测试
 public class DateUtilTest {
 
@@ -53,5 +54,26 @@ String sql = "select * from t_order where create_time>='{1}'
    String sql2 = sql.replace("{1}", df.format(initMonth)).replace("{2}", df.format(fullMonth));
 	System.out.println(sql2);
 	
+	}
+	
+	//测试字符串是否有值
+	@Test
+	public void hasText() {
+		boolean hasText = StringUtil.hasText("abc");
+		System.out.println(hasText);
+	}
+	//测试是否为数字
+	@Test
+	public void isNumber() {
+		boolean number = StringUtil.isNumber("12.333");
+		System.out.println(number);
+	}
+	//测试计算年龄
+	@Test
+	public void getAge() {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(1997, 8, 2);
+		int age=DateUtil.getAge(calendar.getTime());
+		System.out.println(age);
 	}
 }

@@ -1,10 +1,12 @@
-package com.wyt.common.utils;
+package com.wjj.common.utils;
 
 
 
 import java.io.File;
 
 import org.junit.Test;
+
+import com.wjj.common.utils.FileUtil;
 
 public class FileUtilTest {
 

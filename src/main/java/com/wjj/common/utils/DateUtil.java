@@ -1,4 +1,4 @@
-package com.wyt.common.utils;
+package com.wjj.common.utils;
 
 import java.util.Calendar;
 import java.util.Date;
