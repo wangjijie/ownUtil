@@ -5,10 +5,26 @@ import java.util.Date;
 
 /***
  * 
- * @author 涛涛0926
+ * @author 0926
  *
  */
 public class DateUtil {
+	
+	/**
+	 * 
+	 * 计算一天前的时间
+	 * 
+	 * 
+	 * 
+	 * */
+	public static Date backDate(Date date) {
+		//创建日历类
+		Calendar calendar = Calendar.getInstance();
+		//计算一天前的时间
+		calendar.add(Calendar.DAY_OF_MONTH, -1);
+		return calendar.getTime();
+	}
+	
 	/**
 	 * 
 	 * @Title: getAge 

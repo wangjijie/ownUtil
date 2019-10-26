@@ -11,6 +11,13 @@ import org.junit.Test;
 //开始测试
 public class DateUtilTest {
 
+	@Test//计算一天前的时间
+	public void testBackDate() {
+		Date date = DateUtil.backDate(new Date());
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println(df.format(date));
+	}
+	
 	@Test//月初
 	public void testGetDateByInitMonth() {
 		Calendar c=Calendar.getInstance();
